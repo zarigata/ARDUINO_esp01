@@ -88,7 +88,7 @@ Adafruit_SSD1306 display(OLED_RESET);
 void setup() {
   ArduinoOTA.setHostname(newHostname);
   Wire.begin(0,2);
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3D);
   ArduinoOTA.begin();
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
