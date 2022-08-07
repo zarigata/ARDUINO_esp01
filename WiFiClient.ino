@@ -84,7 +84,7 @@ const unsigned char BS [] PROGMEM = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 #define OLED_RESET -1
-Adafruit_SSD1306 display(OLED_RESET);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 void setup() {
   ArduinoOTA.setHostname(newHostname);
   Wire.begin(0,2);
